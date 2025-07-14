@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Poppins, Young_Serif } from "next/font/google";
+import { Poppins, Young_Serif , Allison } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 
@@ -11,6 +11,12 @@ const poppins = Poppins({
 
 const youngSerif = Young_Serif({
   variable: "--font-young-serif",
+  subsets: ["latin"],
+  weight: ['400'],
+});
+
+const allison = Allison({
+  variable: "--font-allison",
   subsets: ["latin"],
   weight: ['400'],
 });
@@ -28,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.variable} ${youngSerif.variable} antialiased`}
+        className={`${poppins.variable} ${youngSerif.variable} ${allison.variable} antialiased`}
       >
         <Header/>
         {children}

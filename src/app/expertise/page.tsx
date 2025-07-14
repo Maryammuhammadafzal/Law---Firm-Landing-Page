@@ -29,7 +29,7 @@ const ExpertisePage = () => {
         <div className='w-full bg-secondary h-auto flex justify-center items-center lg:py-20 md:py-14 sm:py-7'>
             <div className='lg:w-[70%] md:w-[85%] w-full md:px-0 px-3  h-auto flex flex-col lg:gap-16 md:gap-12 gap-8 justify-center items-center'>
                 <div className="heading flex flex-col gap-6 items-center justify-center h-auto w-full">
-                    <SubHeading />
+                    <SubHeading title='Our Expertise' />
                     <h2 className='text-6xl font-mono text-center'>Legal Specialties</h2>
                 </div>
                 <div className='w-full h-auto gap-4 flex flex-col'>
