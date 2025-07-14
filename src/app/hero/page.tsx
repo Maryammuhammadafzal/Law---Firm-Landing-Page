@@ -9,7 +9,7 @@ const HeroPage = () => {
         className="relative w-full h-screen bg-left-top sm:bg-left-bottom md:bg-center bg-cover bg-no-repeat"
         style={{ backgroundImage: `url('/images/hero-image.png')` }}
       >
-        <div className="absolute w-full min-h-[400px] flex justify-center items-center z-30">
+        <div className="absolute w-full min-h-[400px]  top-30 left-30  z-30">
                 <HeroCard/>
         </div>
       </div>
