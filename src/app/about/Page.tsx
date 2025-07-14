@@ -34,11 +34,11 @@ const AboutPage = () => {
                             <p className='text-base text-secondary text-center'>Vanguard Legal Group is a dedicated team of legal professionals driven by a commitment to justice and client success. With years of experience across various legal disciplines, we have built a reputation for excellence and integrity.</p>
                         </div>
                     </div>
-                    <div className='rating w-full flex justify-center py-6 items-center'>
+                    <div className='rating w-full flex bg-secondary justify-center py-6 items-center'>
                         <div className='flex w-[90%] justify-evenly items-center h-auto'>
                             {rating_data.map((rate, index) => (
                                 <div key={index} className='flex flex-col gap-3 items-center justify-center text-center'>
-                                    <h2 className='xl:text-6xl md:text-5xl sm:text-4xl xs:text-3xl text-2xl font-mono text-center border-b-8 border-primary w-fit'>{rate.num}</h2>
+                                    <h2 className='xl:text-5xl md:text-4xl sm:text-3xl xs:text-2xl text-xl font-mono text-center border-b-8 border-primary w-fit'>{rate.num}</h2>
                                     <p className='max-w-3xl text-base'>
                                         {rate.title}
                                     </p>
