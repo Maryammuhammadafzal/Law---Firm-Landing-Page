@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/carousel";
 import React from "react";
 import SubHeading from "@/components/SubHeading";
+import { Button } from "@/components/ui/button";
 
 const ChoosePage = () => {
     let choose_data = [
@@ -44,7 +45,7 @@ const ChoosePage = () => {
     ];
 
     return (
-        <div className='w-full bg-secondary h-auto flex justify-center items-center lg:py-20 md:py-14 sm:py-7'>
+        <div className='w-full h-auto flex justify-center items-center lg:py-20 md:py-14 sm:py-7'>
             <div className='lg:w-[80%] md:w-[95%] w-full md:px-0 px-3  h-auto flex flex-col lg:gap-16 md:gap-12 gap-8 justify-center items-center'>
                 <div className="heading flex flex-col gap-6 items-center justify-center h-auto w-full">
                     <SubHeading title="Why Us" />
@@ -73,6 +74,9 @@ const ChoosePage = () => {
                                             <p className='max-w-3xl text-foreground text-base'>
                                                 {description}
                                             </p>
+                                            <div className="foot w-full h-auto py-3 flex justify-start">
+                                                <Button className='bg-transparent px-10 border border-foreground text-foreground text-sm font-sans rounded-full'>Get In Touch</Button>
+                                            </div>
 
 
                                             <div className="w-full flex justify-end items-end px-7 absolute bottom-20 right-20 z-40">
@@ -87,8 +91,6 @@ const ChoosePage = () => {
                             </CarouselItem>
                         ))}
                     </CarouselContent>
-                    {/* 
-  */}
                 </Carousel>
 
 
