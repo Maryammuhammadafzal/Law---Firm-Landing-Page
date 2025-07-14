@@ -75,7 +75,7 @@ const ChoosePage = () => {
                                                 {description}
                                             </p>
                                             <div className="foot w-full h-auto py-3 flex justify-start">
-                                                <Button className='bg-transparent px-10 border border-foreground text-foreground text-sm font-sans rounded-full'>Get In Touch</Button>
+                                                <Button className='bg-transparent  px-10 border border-foreground text-foreground text-sm font-sans rounded-full'>Get In Touch</Button>
                                             </div>
 
 
