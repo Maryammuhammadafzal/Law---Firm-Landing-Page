@@ -10,9 +10,13 @@ const TestimonialPage = () => {
                     <h2 className='text-6xl font-mono text-center'>What talk about us</h2>
                 </div>
 
-<div className='w-full h-auto bg-secondary flex justify-center items-center'>
-    
-</div>
+                <div className='w-full h-auto bg-secondary py-10 flex justify-center items-center'>
+                    <div className="w-[90%] flex gap-6 ">
+                        <ul className='w-[30%] h-auto flex flex-col gap-6'>
+<li className='text-2xl font-sans text-black/50 focus:text-black hover:text-black active:text-black'></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     )
