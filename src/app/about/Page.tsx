@@ -21,11 +21,11 @@ const AboutPage = () => {
         },
     ]
     return (
-        <div className='w-full h-auto flex justify-center items-center lg:py-20 md:py-14 sm:py-7'>
+        <div className='w-full h-auto flex justify-center items-center lg:py-20 md:py-14 sm:py-7 py-4'>
             <div className=' w-full md:px-0 px-3  h-auto flex flex-col lg:gap-16 md:gap-12 gap-8 justify-center items-center'>
                 <div className="heading flex flex-col gap-6 items-center justify-center h-auto w-full">
                     <SubHeading title="Who we are" />
-                    <h2 className='lg:text-6xl sm:text-5xl text-4xl font-mono text-center'>About Our Firm</h2>
+                    <h2 className='lg:text-6xl sm:text-5xl xs:text-4xl text-3xl font-mono text-center'>About Our Firm</h2>
                 </div>
                 <div className='flex flex-col w-full h-auto'>
                     <div className='w-full h-auto flex justify-center items-center bg-center bg-fixed bg-cover' style={{ backgroundImage: `url('/images/about-bg.png')` }}>

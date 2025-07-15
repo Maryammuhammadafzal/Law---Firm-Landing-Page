@@ -37,13 +37,13 @@ const ExpertisePage = () => {
                         expertise_data.map((data, index) => (
                             <div key={index} className={`w-full h-auto flex justify-between py-5 border-foreground ${index === expertise_data.length-1 ? 'border-b-0' : 'border-b' }`}>
                                 <div className='flex flex-col gap-3'>
-                                    <h2 className='xl:text-6xl md:text-5xl sm:text-4xl xs:text-3xl text-2xl font-mono text-center border-b-8 border-primary w-fit'>{data.title}</h2>
+                                    <h2 className='xl:text-6xl md:text-5xl sm:text-4xl xs:text-3xl text-[20px] font-mono border-b-8 border-primary w-fit'>{data.title}</h2>
                                     <p className='xl:max-w-3xl max-w-2xl md:text-base sm:text-sm text-xs'>
                                         {data.description}
                                     </p>
                                 </div>
                                 <div className='w-auto h-auto'>
-                                    <p className='xl:text-2xl lg:text-xl md:text-lg w-[120px] font-medium'>{data.year}</p>
+                                    <p className='xl:text-2xl lg:text-xl md:text-lg sm:text-base text-sm sm:w-[120px] xs:w-[90px] w-[70px] font-medium'>{data.year}</p>
                                 </div>
                             </div>
                         ))
