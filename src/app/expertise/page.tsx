@@ -26,8 +26,8 @@ const ExpertisePage = () => {
         },
     ]
     return (
-        <div className='w-full bg-secondary h-auto flex justify-center items-center lg:py-20 md:py-14 sm:py-7'>
-            <div className='lg:w-[70%] md:w-[85%] w-full md:px-0 px-3  h-auto flex flex-col lg:gap-16 md:gap-12 gap-8 justify-center items-center'>
+        <div className='w-full bg-secondary h-auto flex justify-center items-center lg:py-20 md:py-14 sm:py-7 py-4'>
+            <div className='lg:w-[75%] md:w-[85%] w-full md:px-0 px-3  h-auto flex flex-col lg:gap-16 md:gap-12 gap-8 justify-center items-center'>
                 <div className="heading flex flex-col gap-6 items-center justify-center h-auto w-full">
                     <SubHeading title='Our Expertise' />
                     <h2 className='text-6xl font-mono text-center'>Legal Specialties</h2>
@@ -38,12 +38,12 @@ const ExpertisePage = () => {
                             <div key={index} className={`w-full h-auto flex justify-between py-5 border-foreground ${index === expertise_data.length-1 ? 'border-b-0' : 'border-b' }`}>
                                 <div className='flex flex-col gap-3'>
                                     <h2 className='xl:text-6xl md:text-5xl sm:text-4xl xs:text-3xl text-2xl font-mono text-center border-b-8 border-primary w-fit'>{data.title}</h2>
-                                    <p className='max-w-3xl text-base'>
+                                    <p className='xl:max-w-3xl max-w-2xl md:text-base sm:text-sm text-xs'>
                                         {data.description}
                                     </p>
                                 </div>
                                 <div className='w-auto h-auto'>
-                                    <p className='text-2xl font-medium'>{data.year}</p>
+                                    <p className='xl:text-2xl lg:text-xl md:text-lg w-[120px] font-medium'>{data.year}</p>
                                 </div>
                             </div>
                         ))
