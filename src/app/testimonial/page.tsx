@@ -58,7 +58,7 @@ const TestimonialPage = () => {
                         </ul>
                         {activeTestimonial && (
                             <div key={activeTestimonial.id} className='flex flex-col gap-6 lg:w-[55%] w-[60%] h-auto'>
-                                <p className='xl:text-[40px] lg:text-4xl md:text-3xl sm:text-xl xs:text-base text-xs font-mono pb-4 border-b border-foreground'>{activeTestimonial.testimonial}</p>
+                                <p className='xl:text-[40px] lg:text-4xl md:text-3xl sm:text-xl xs:text-base text-xs font-mono pb-4 border-b border-foreground'>{`${activeTestimonial.testimonial}`}</p>
                                 <div className='w-full flex max-xs:flex-wrap justify-between items-center gap-3 h-auto'>
                                     <div className="profile flex gap-3 items-center">
                                         <Image src={activeTestimonial.image} alt='client Image' width={90} height={90} className='rounded-full lg:h-[90px] lg:w-[90px] sm:w-[70px] sm:h-[70px] w-[50px] h-[50px]' />
