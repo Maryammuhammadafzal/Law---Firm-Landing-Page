@@ -19,7 +19,7 @@ const ProjectPage = () => {
     ]
     return (
         <div className='w-full h-auto flex justify-center items-center lg:py-20 md:py-14 sm:py-7'>
-            <div className='lg:w-[80%] md:w-[95%] w-full md:px-0 px-3  h-auto flex flex-col lg:gap-16 md:gap-12 gap-8 justify-center items-center'>
+            <div className='lg:w-[85%] md:w-[95%] w-full md:px-0 px-3  h-auto flex flex-col lg:gap-16 md:gap-12 gap-8 justify-center items-center'>
                 <div className="heading flex flex-col gap-6 items-center justify-center h-auto w-full">
                     <SubHeading title="Our Projects" />
                     <h2 className='text-6xl font-mono text-center'>Recent Success Stories</h2>
@@ -31,9 +31,9 @@ const ProjectPage = () => {
                                 {/* Content */}
                                 <div className='flex flex-col gap-3 max-w-xl'>
                                     <div className="flex flex-col md:gap-2 sm:gap-1 gap-0 max-sm:p-1 max-md:p-3">
-                                        <h2 className='lg:text-4xl  sm:text-3xl xs:text-2xl text-xl text-foreground font-mono text-center border-b-8 border-primary w-fit'>{project.title}</h2>
+                                        <h2 className='xl:text-4xl  lg:text-3xl xs:text-2xl text-xl text-foreground font-mono border-b-8 border-primary w-fit'>{project.title}</h2>
                                     </div>
-                                    <p className='max-w-3xl text-foreground text-base'>
+                                    <p className='lg:max-w-3xl md:max-w-2xl sm:max-w-xl xs:max-w-md max-w-xs text-foreground md:text-base sm:txet-sm text-xs'>
                                         {project.desciption}
                                     </p>
                                     <div className="foot w-full h-auto py-3 flex justify-start">

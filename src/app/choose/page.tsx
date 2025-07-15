@@ -71,7 +71,7 @@ const ChoosePage = () => {
                                             <div className="flex flex-col md:gap-2 sm:gap-1 gap-0 max-sm:p-1 max-md:p-3">
                                                 <h2 className='lg:text-4xl  md:text-3xl xs:text-2xl text-xl text-foreground font-mono text-center border-b-8 border-primary w-fit'>{title}</h2>
                                             </div>
-                                            <p className='max-w-3xl text-foreground md:text-base sm:text-sm xs:text-xs'>
+                                            <p className='lg:max-w-3xl md:max-w-2xl sm:max-w-xl xs:max-w-md max-w-xs text-foreground md:text-base sm:text-sm text-xs'>
                                                 {description}
                                             </p>
                                             <div className="foot w-full h-auto py-3 flex justify-start">

@@ -29,17 +29,17 @@ const AboutPage = () => {
                 </div>
                 <div className='flex flex-col w-full h-auto'>
                     <div className='w-full h-auto flex justify-center items-center bg-center bg-fixed bg-cover' style={{ backgroundImage: `url('/images/about-bg.png')` }}>
-                        <div className='flex justify-center max-w-2xl gap-3 items-center w-full h-[450px] flex-col'>
-                            <h4 className='text-5xl text-secondary font-mono  text-center capitalize'>Who we are</h4>
-                            <p className='text-base text-secondary text-center'>Vanguard Legal Group is a dedicated team of legal professionals driven by a commitment to justice and client success. With years of experience across various legal disciplines, we have built a reputation for excellence and integrity.</p>
+                        <div className='flex justify-center md:max-w-2xl sm:max-w-xl xs:max-w-md max-w-xs gap-3 items-center w-full h-[450px] flex-col'>
+                            <h4 className='md:text-5xl text-4xl text-secondary font-mono  text-center capitalize'>Who we are</h4>
+                            <p className='md:text-base xs:text-sm text-xs text-secondary text-center'>Vanguard Legal Group is a dedicated team of legal professionals driven by a commitment to justice and client success. With years of experience across various legal disciplines, we have built a reputation for excellence and integrity.</p>
                         </div>
                     </div>
                     <div className='rating w-full flex bg-secondary justify-center py-6 items-center'>
-                        <div className='flex w-[90%] justify-evenly items-center h-auto'>
+                        <div className='flex w-[90%] max-sm:flex-wrap justify-evenly items-center h-auto'>
                             {rating_data.map((rate, index) => (
-                                <div key={index} className='flex flex-col gap-3 items-center justify-center text-center'>
+                                <div key={index} className='flex p-2 flex-col gap-3 items-center justify-center text-center'>
                                     <h2 className='xl:text-5xl md:text-4xl sm:text-3xl xs:text-2xl text-xl font-mono text-center border-b-8 border-primary w-fit'>{rate.num}</h2>
-                                    <p className='max-w-3xl text-base'>
+                                    <p className='lg:max-w-3xl md:max-w-2xl sm:max-w-xl xs:max-w-md max-w-xs md:text-base sm:text-sm text-xs'>
                                         {rate.title}
                                     </p>
                                 </div>
