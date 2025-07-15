@@ -55,7 +55,7 @@ const ChoosePage = () => {
                 <Carousel className="w-full md:p-6 p-3">
                     <CarouselContent>
                         {choose_data.map(({ title, description, quote, sign }, index) => (
-                            <CarouselItem className="ml-1">
+                            <CarouselItem key={index} className="ml-1">
                                 <Card
                                     key={index}
                                     className="w-[99%] shadow-none p-0 border-none relative h-auto flex justify-center items-center bg-transparent"
