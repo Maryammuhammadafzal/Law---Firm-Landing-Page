@@ -27,13 +27,13 @@ const ProjectPage = () => {
                 <div className='flex flex-col w-full py-6 h-auto gap-8'>
                     {
                         project_data.map((project, index) => (
-                            <div key={index} className='w-full h-auto flex justify-between gap-3'>
+                            <div key={index} className='w-full h-auto flex md:flex-row flex-col justify-between gap-3'>
                                 {/* Content */}
-                                <div className='flex flex-col gap-3 max-w-xl'>
+                                <div className='flex flex-col gap-3 md:max-w-xl w-full'>
                                     <div className="flex flex-col md:gap-2 sm:gap-1 gap-0 max-sm:p-1 max-md:p-3">
                                         <h2 className='xl:text-4xl  lg:text-3xl xs:text-2xl text-xl text-foreground font-mono border-b-8 border-primary w-fit'>{project.title}</h2>
                                     </div>
-                                    <p className='lg:max-w-3xl md:max-w-2xl sm:max-w-xl xs:max-w-md max-w-xs text-foreground md:text-base sm:txet-sm text-xs'>
+                                    <p className='xl:max-w-2xl lg:max-w-xl md:max-w-lg sm:max-w-sm max-w-xs text-foreground md:text-base sm:txet-sm text-xs'>
                                         {project.desciption}
                                     </p>
                                     <div className="foot w-full h-auto py-3 flex justify-start">
@@ -41,7 +41,7 @@ const ProjectPage = () => {
                                     </div>
                                 </div>
                                 {/* Image */}
-                                <div className='w-[480px] h-[250px] rounded-3xl flex justify-center items-center'>
+                                <div className='md:w-[480px] w-full h-[250px] rounded-3xl flex justify-center items-center'>
                                     <Image src={project.image} alt="quote-icon" width={78} height={55} className="w-full h-full object-cover rounded-3xl" />
                                 </div>
                             </div>
