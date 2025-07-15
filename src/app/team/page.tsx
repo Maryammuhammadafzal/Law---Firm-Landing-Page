@@ -38,7 +38,7 @@ const TeamPage = () => {
             description:
                 "Founder and Managing Partner with over 20 years of experience in corporate and criminal law. John is known for his strategic acumen and relentless advocacy.",
         },
-        
+
     ];
 
     return (
@@ -46,12 +46,12 @@ const TeamPage = () => {
             <div className='lg:w-[80%] md:w-[95%] w-full md:px-0 px-3  h-auto flex flex-col lg:gap-16 md:gap-12 gap-8 justify-center items-center'>
                 <div className="heading flex flex-col gap-6 items-center justify-center h-auto w-full">
                     <SubHeading title="Why Us" />
-                    <h2 className='text-6xl font-mono text-center'>Why Choose Us</h2>
+                    <h2 className='lg:text-6xl sm:text-5xl text-4xl font-mono text-center'>Why Choose Us</h2>
                 </div>
 
                 <Carousel className="w-full md:p-6 p-3">
                     <CarouselContent>
-                        {choose_data.map(({ name, description, image}, index) => (
+                        {choose_data.map(({ name, description, image }, index) => (
                             <CarouselItem className="">
                                 <Card
                                     key={index}
@@ -63,7 +63,7 @@ const TeamPage = () => {
                                             <div className="flex flex-col md:gap-2 sm:gap-1 gap-0 max-sm:p-1 max-md:p-3">
                                                 <h2 className='lg:text-4xl  sm:text-3xl xs:text-2xl text-xl text-foreground font-mono text-center border-b-8 border-primary w-fit'>{name}</h2>
                                             </div>
-                                            <p className=' text-foreground max-w-2xl text-base'>
+                                            <p className=' text-foreground lg:max-w-3xl md:max-w-2xl sm:max-w-xl xs:max-w-md max-w-xs md:text-base sm:text-sm text-xs'>
                                                 {description}
                                             </p>
                                             <div className="foot w-full h-auto py-3 flex justify-start">
@@ -71,16 +71,16 @@ const TeamPage = () => {
                                             </div>
 
 
-                                            <div className="w-[20px] h-auto flex gap-3 absolute top-10 left-20 ">
-                                                    <CarouselPrevious ><MoveLeftIcon size={30} /></CarouselPrevious>
-                                                    <CarouselNext ><MoveRightIcon size={30} /></CarouselNext>
-                                            
+                                            <div className="w-[20px] h-auto flex gap-3 absolute md:top-10 top-4 md:left-20 right-4 ">
+                                                <CarouselPrevious ><MoveLeftIcon size={30} /></CarouselPrevious>
+                                                <CarouselNext ><MoveRightIcon size={30} /></CarouselNext>
+
                                             </div>
 
                                         </div>
 
-                                        <div className="w-[380px] h-[470px] rounded-[40px]">
-                                            <Image src='/images/team-image1.jpg' alt="team-image" width={78} height={55} className="w-full h-full object-cover rounded-[40px]" />
+                                        <div className="sm:w-[380px]  lg:h-[450px] md:h-[400px] h-[350px] rounded-[40px]">
+                                            <Image src={image} alt="team-image" width={78} height={55} className="w-full h-full object-cover rounded-[40px]" />
                                         </div>
                                     </CardContent>
                                 </Card>

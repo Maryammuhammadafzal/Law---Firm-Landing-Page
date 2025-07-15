@@ -22,7 +22,7 @@ const ProjectPage = () => {
             <div className='lg:w-[85%] md:w-[95%] w-full md:px-0 px-3  h-auto flex flex-col lg:gap-16 md:gap-12 gap-8 justify-center items-center'>
                 <div className="heading flex flex-col gap-6 items-center justify-center h-auto w-full">
                     <SubHeading title="Our Projects" />
-                    <h2 className='text-6xl font-mono text-center'>Recent Success Stories</h2>
+                    <h2 className='lg:text-6xl sm:text-5xl text-4xl font-mono text-center'>Recent Success Stories</h2>
                 </div>
                 <div className='flex flex-col w-full py-6 h-auto gap-8'>
                     {

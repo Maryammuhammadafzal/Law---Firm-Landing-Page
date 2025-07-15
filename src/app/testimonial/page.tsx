@@ -45,27 +45,27 @@ const TestimonialPage = () => {
             <div className='w-full md:px-0 px-3  h-auto flex flex-col lg:gap-16 md:gap-12 gap-8 justify-center items-center'>
                 <div className="heading flex flex-col gap-6 items-center justify-center h-auto w-full">
                     <SubHeading title="Testimonials" />
-                    <h2 className='text-6xl font-mono text-center'>What talk about us</h2>
+                    <h2 className='lg:text-6xl sm:text-5xl text-4xl font-mono text-center'>What talk about us</h2>
                 </div>
 
                 <div className='w-full h-auto bg-secondary py-10 flex justify-center items-center'>
-                    <div className="w-[90%] flex gap-6 ">
+                    <div className="lg:w-[90%] w-[98%] flex gap-6 ">
                         <ul className='w-[35%] h-auto flex flex-col gap-6'>
                             {testimonial_data.map(({ title }, index) => (
-                                <li key={index} onClick={() => setActive(index)} className={`text-2xl font-sans cursor-pointer transition-colors duration-300 ${active === index ? 'text-black font-semibold' : 'text-black/50 hover:text-black'
+                                <li key={index} onClick={() => setActive(index)} className={`xl:text-2xl lg:text-xl md:text-lg sm:text-base xs:text-sm text-xs font-sans cursor-pointer transition-colors duration-300 ${active === index ? 'text-black font-semibold' : 'text-black/50 hover:text-black'
                                     }`}>{title}</li>
                             ))}
                         </ul>
                         {activeTestimonial && (
-                            <div key={activeTestimonial.id} className='flex flex-col gap-6 w-[55%] h-auto'>
-                                <p className='text-[40px] font-mono pb-4 border-b border-foreground'>{activeTestimonial.testimonial}</p>
-                                <div className='w-full flex justify-between items-center gap-3 h-auto'>
+                            <div key={activeTestimonial.id} className='flex flex-col gap-6 lg:w-[55%] w-[60%] h-auto'>
+                                <p className='xl:text-[40px] lg:text-4xl md:text-3xl sm:text-2xl xs:text-xl text-base font-mono pb-4 border-b border-foreground'>{activeTestimonial.testimonial}</p>
+                                <div className='w-full flex max-xs:flex-wrap justify-between items-center gap-3 h-auto'>
                                     <div className="profile flex gap-3 items-center">
-                                        <Image src={activeTestimonial.image} alt='client Image' width={90} height={90} className='rounded-full' />
-                                        <h3 className='text-3xl font-mono'>{activeTestimonial.name}</h3>
+                                        <Image src={activeTestimonial.image} alt='client Image' width={90} height={90} className='rounded-full lg:h-[90px] lg:w-[90px] w-[70px] h-[70px]' />
+                                        <h3 className='xl:text-3xl lg:text-2xl md:text-lg sm:text-base text-sm font-mono'>{activeTestimonial.name}</h3>
                                     </div>
-                                    <div className='case-name w-auto h-auto px-3'>
-                                        <p className='text-xl '>
+                                    <div className='case-name xs:w-auto w-full justify-end max-xs:flex h-auto md:px-3 px-1'>
+                                        <p className='xl:text-xl lg:text-base md:text-sm text-xs'>
                                             Case: {activeTestimonial.title}
                                         </p>
                                     </div>

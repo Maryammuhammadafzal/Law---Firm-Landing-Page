@@ -49,7 +49,7 @@ const ChoosePage = () => {
             <div className='lg:w-[80%] md:w-[95%] w-full md:px-0 px-3  h-auto flex flex-col lg:gap-16 md:gap-12 gap-8 justify-center items-center'>
                 <div className="heading flex flex-col gap-6 items-center justify-center h-auto w-full">
                     <SubHeading title="Why Us" />
-                    <h2 className='text-6xl font-mono text-center'>Why Choose Us</h2>
+                    <h2 className='lg:text-6xl sm:text-5xl text-4xl font-mono text-center'>Why Choose Us</h2>
                 </div>
 
                 <Carousel className="w-full md:p-6 p-3">
