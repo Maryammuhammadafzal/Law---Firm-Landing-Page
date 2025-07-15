@@ -55,7 +55,7 @@ const TeamPage = () => {
                             <CarouselItem className="">
                                 <Card
                                     key={index}
-                                    className="w-[99%] shadow-none p-0 border-none relative h-auto flex justify-center items-center bg-transparent"
+                                    className="w-[99%] shadow-none p-3 border-none relative h-auto flex justify-center items-center bg-transparent"
                                 >
                                     <CardContent className="flex p-0 flex-col sm:flex-row md:gap-10 sm:gap-6 gap-3 items-center justify-between w-full h-full">
 
@@ -71,9 +71,11 @@ const TeamPage = () => {
                                             </div>
 
 
-                                            <div className="w-[20px] h-auto flex gap-3 absolute md:top-10 top-4 md:left-20 right-4 ">
-                                                <CarouselPrevious ><MoveLeftIcon size={30} /></CarouselPrevious>
-                                                <CarouselNext ><MoveRightIcon size={30} /></CarouselNext>
+                                            <div className="h-auto w-fit flex absolute md:top-10 top-4 md:left-10 right-4 ">
+                                                <div className="flex w-fit gap-0">
+                                                    <CarouselPrevious ><MoveLeftIcon size={30} /></CarouselPrevious>
+                                                    <CarouselNext ><MoveRightIcon size={30} /></CarouselNext>
+                                                </div>
 
                                             </div>
 

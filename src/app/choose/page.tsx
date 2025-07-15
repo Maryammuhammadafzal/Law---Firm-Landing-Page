@@ -79,8 +79,8 @@ const ChoosePage = () => {
                                             </div>
 
 
-                                            <div className="w-full flex justify-end items-end px-7 absolute sm:bottom-20 bottom-5  xs:right-20 right-5 z-40">
-                                                <div className="flex gap-1 lg:gap-3">
+                                            <div className="w-fit  absolute sm:bottom-20 bottom-5  xs:right-20 right-5 z-40">
+                                                <div className="flex w-fit gap-1">
                                                     <CarouselPrevious ><MoveLeftIcon size={30} /></CarouselPrevious>
                                                     <CarouselNext ><MoveRightIcon size={30} /></CarouselNext>
                                                 </div>
