@@ -19,10 +19,10 @@ const ProjectPage = () => {
     ]
     return (
         <div className='w-full h-auto flex justify-center items-center lg:py-20 md:py-14 sm:py-7'>
-            <div className='lg:w-[85%] md:w-[95%] w-full md:px-0 px-3  h-auto flex flex-col lg:gap-16 md:gap-12 gap-8 justify-center items-center'>
+            <div className='lg:w-[80%] md:w-[95%] w-full md:px-0 px-3  h-auto flex flex-col lg:gap-16 md:gap-12 gap-8 justify-center items-center'>
                 <div className="heading flex flex-col gap-6 items-center justify-center h-auto w-full">
-                    <SubHeading title="Team Members" />
-                    <h2 className='text-6xl font-mono text-center'>Meet Our Team</h2>
+                    <SubHeading title="Our Projects" />
+                    <h2 className='text-6xl font-mono text-center'>Recent Success Stories</h2>
                 </div>
                 <div className='flex flex-col w-full py-6 h-auto gap-8'>
                     {
@@ -48,7 +48,7 @@ const ProjectPage = () => {
                         ))
                     }
                 </div>
-                <div className="foot w-full h-auto py-3 flex justify-center items-center">
+                <div className="foot w-full h-auto py-3 flex justify-center items-center" >
                     <Button className='bg-transparent px-10 border border-foreground text-foreground text-sm font-sans rounded-full'>See All Projects</Button>
                 </div>
             </div>
