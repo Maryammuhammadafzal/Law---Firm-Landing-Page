@@ -50,8 +50,8 @@ const Footer = () => {
                 </div>
 
                 <div className='flex copyright w-full h-auto justify-center items-center'>
-                    <p className='md:text-base sm:text-sm text-xs font-sans'>
-                        © 2021 all copyright reserved. All Rights Reserved.
+                    <p className='md:text-base sm:text-sm text-xs font-sans flex gap-1'>
+                        © 2021 all copyright reserved. All Rights Reserved. <a href="https://rootletsolutions.com/" target="_blank" className="underline">Rootlet Solution</a>
                     </p>
                 </div>
             </div>
